@@ -1,79 +1,64 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Intro
 
-# Getting Started
+Welcome to the React Native Image Search App! This app allows users to search for images using the Flickr image search API, view search history, and display the search results in a scrollable grid.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## The following has been achieved
 
-## Step 1: Start the Metro Server
+- Search for images with specific search terms.
+- Lazy loading of images for a smooth scrolling experience.
+- View and interact with search history.
+- Delete individual search history items with long press.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## Development Environment Setup
 
-To start Metro, run the following command from the _root_ of your React Native project:
+Using the React Native CLI [Development Environment](https://reactnative.dev/docs/environment-setup), setup your machine for Android (and iOS for macs).
+
+The npm package manager is also what we use instead of yarn so make sure that is installed as well.
+
+## Running the project
+
+### Install Node Dependencies
+
+In the root folder of the project run
 
 ```bash
-# using npm
+npm
+```
+
+### (iOS Only) Install CocoaPod Dependencies
+
+If you are trying to run an iOS build you will also need to pull any pods as well using. Please make sure you are inside the `ios` folder in order to install the node_module and CocoaPod pods.
+
+```bash
+cd ios
+pod install
+```
+
+### Building and running the app
+
+```bash
+# Start the React Native packager
 npm start
-
-# OR using Yarn
-yarn start
 ```
 
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
+### Run the app on an iOS/Android Emulator or a physical device:
 
 ```bash
-# using npm
-npm run android
 
-# OR using Yarn
-yarn android
+# For iOS
+npm react-native run-ios
+cd ios && pod install
+
+# For Android
+npm react-native run-android
 ```
 
-### For iOS
+Make sure you have the Android/iOS Emulator running or your physical device connected.
 
-```bash
-# using npm
-npm run ios
+## Contributing
 
-# OR using Yarn
-yarn ios
-```
+Contributions to the Movie Search App are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request on the [GitHub repository](https://github.com/YaAlB/FlickrProject).
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+## License
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+The Movie Search App is released under the [MIT License](https://opensource.org/licenses/MIT). Feel free to use, modify, and distribute the app as per the terms of the license.

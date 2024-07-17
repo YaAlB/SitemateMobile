@@ -58,8 +58,8 @@ Make sure you have the Android/iOS Emulator running or your physical device conn
 ### Create .env File
 
 Add the following to your .env file:
-```FLICKR_URL=https://api.flickr.com
-FLICKR_TOKEN=<YOUR_FLICKR_TOKEN>```
+FLICKR_URL=https://api.flickr.com
+FLICKR_TOKEN=<YOUR_FLICKR_TOKEN>
 
 ## Contributing
 

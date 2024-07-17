@@ -55,6 +55,12 @@ npm react-native run-android
 
 Make sure you have the Android/iOS Emulator running or your physical device connected.
 
+### Create .env File
+
+Add the following to your .env file:
+```FLICKR_URL=https://api.flickr.com
+FLICKR_TOKEN=<YOUR_FLICKR_TOKEN>```
+
 ## Contributing
 
 Contributions to the Movie Search App are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request on the [GitHub repository](https://github.com/YaAlB/FlickrProject).
